@@ -1,3 +1,4 @@
+#Tasks
 def countGoodSubstrings(s: str) -> int:
       pass
 
