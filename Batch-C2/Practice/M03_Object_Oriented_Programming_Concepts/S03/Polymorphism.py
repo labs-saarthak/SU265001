@@ -11,7 +11,7 @@ Python --> Polymorphism --> Method Overriding , Duck Typing
 
 Method Overriding :
 Same method name can behave differenlty in different classes
-'''
+
 class Vehicle:
     def sound(self):
         print("Vehicle gives Sound")
@@ -42,7 +42,7 @@ obj2 = Circle(10)
 a = Cal(10,20)
 d = Cal(10,20,30)
 
-'''Duck Typing -->If it is required for an object to use method, it tells us to use the object 
+Duck Typing -->If it is required for an object to use method, it tells us to use the object 
                 without the type object
 
 class Dog:
