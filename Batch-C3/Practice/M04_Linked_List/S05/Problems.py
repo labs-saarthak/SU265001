@@ -9,6 +9,7 @@ class Solution:
             prev = curr
             curr = temp
         return prev'''
+        #Second Approach
         if head is None or head.next is None:
             return head
         new_head = self.reverseList(head.next)
@@ -27,6 +28,7 @@ class Solution:
             if slow == fast:
                 return True
         return False'''
+        #Second Approach
         a = set()
         curr = head
         while curr:
@@ -47,6 +49,7 @@ class Solution:
             if slow == fast:
                 return True
         return False'''
+        #Second Approach
         a = set()
         curr = head
         while curr:
@@ -70,6 +73,7 @@ class Solution:
             fast = fast.next
         slow.next = slow.next.next
         return dummy.next'''
+        #Second Approach
         length = 0
         curr =head
         while curr:
