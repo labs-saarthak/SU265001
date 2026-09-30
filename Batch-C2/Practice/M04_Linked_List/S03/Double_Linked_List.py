@@ -107,6 +107,8 @@ def insert_end(head, data):
     new_node.prev = curr
     return head
 
+
+
 def traverse(head):
     curr  =head
     while curr :
