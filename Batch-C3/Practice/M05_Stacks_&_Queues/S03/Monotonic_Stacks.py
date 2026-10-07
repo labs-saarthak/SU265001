@@ -52,7 +52,7 @@ print(monotonic_decrease(arr))
 #4. To Find the Previous smaller Element
 
 #1. To Find the next greater Element:
-#Algorithm:
+#Brute Force Algorithm:
 '''1. Find the len of arr
 2. create an result array with -1 values
 3. iterate through each element throught the next right elements
@@ -72,3 +72,32 @@ def next_greater(arr):
 arr = [5,3,50,2,25]
 print(next_greater(arr))
 
+#Optimal Solution Algorithm:Next Greater Element
+'''
+1. Find the length of array
+2. Create a res of array of size n,with -1
+3. create an empty stack
+4. Traverse the array from left to right
+5. For every index:
+       -->While stack is not empty and arr[stack[-1]] < arr[i]:
+           -->Pop the top index
+           -->Store arr[i] as next greater elem
+6. After traversal, all indexes remaining in the stack,returns -1
+7. Return Res array
+'''
+def next_greater2(arr):
+    n = len(arr)
+    res = [-1] * n
+    stack = []
+    for i in range(n):
+        while stack and arr[stack[-1]] < arr[i]:
+            index = stack.pop()
+            res[index] = arr[i]
+        stack.append(i)
+    return res
+arr = [2,1,2,5,8]
+print(next_greater2(arr))
+
+#next smaller Elem:
+#Previous Greater Elem:
+#Previous Smaller Elem:
