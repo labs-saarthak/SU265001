@@ -56,3 +56,4 @@ q = root.left.right
 res = LCA(root,p,q)
 print("LCA is: ",res.data)
 
+#Leet Code : 97, 144, 145, 110, 543, 226

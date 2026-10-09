@@ -11,7 +11,17 @@ Representation:
        40  50    60   ---->Level 2
 Height Formula:
 Height(Node) = 1 + max(height(left),height(right)) 
+
+Algorithm:
+1. check with root node
+2. Find the length of left sub-tree
+3. Find the length right sub-tree
+4. return 1 + max(left, right)
 '''
+
+
+
+
 class Node:
     def __init__(self,data):
         self.data = data

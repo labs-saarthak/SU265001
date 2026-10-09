@@ -9,6 +9,7 @@ Algorithm :
 4. Find the length of left dia
 5. Find the length of right dia
 6. Return maximum(curr_dia, left_dia, right_dia)
+
 '''
 class Node:
     def __init__(self,data):
